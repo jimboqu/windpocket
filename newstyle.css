@@ -1,0 +1,89 @@
+h2 {text-align: center;
+	font-family: Gleegoo, sans-serif; 
+}
+
+#home {background-color:#f1e9e9;}
+
+#mwcalc {background-color:#f1e9e9;}
+
+p {font-weight: normal;
+	font-size: 14px;
+ }
+
+h1 {text-align: center;
+	font-weight: bold; 
+}
+
+.searchresults: {
+	text-align: right;
+	}
+	
+​.ui-li-desc {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    margin: -0.5em 0 0.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ui-btn-inner {
+    display: block;
+    font-size: 16px;
+    min-width: 0.75em;
+    overflow: hidden;
+    padding: 0.6em 20px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+#home h1 {
+	font-size: 250%; 
+	}
+	
+.searchresults .ui-btn-text {
+	text-align: center;
+	}
+
+.ui-input-text {
+	width:95%;
+	
+	
+}
+
+label.ui-input-text{
+font-weight:bold;
+}
+
+.ui-body-c{
+font-weight:bold; 
+}
+
+#turbines li {
+	font-size: 14px;
+	overflow: hidden;
+	}
+
+.ui-popup {
+	font-size: 25px;
+	font-weight: bold; 
+	background-color: gray; 
+	color: white; 
+}
+
+#pic {	
+		font-weight: bold;
+		text-align: center;
+		margin-bottom:10%;
+			
+	}
+
+#pic img {width:70%;
+			max-width: 200px;
+			}
+
+h3 {position: relative;}
+
+
+

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="stylesheet" type="text/css" href="jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="newstyle.css" />
+  <script src="jquery.min.js"></script>
+  <script src="jqm.min.js"></script>
+  <script src="myscriptmin.js"></script>
+  <script src="phonegap.js"></script>
+  
+</head>
+<body>
+	<script type="text/javascript">alert("hello");</script>
+	<div data-role="page" id="home" data-theme="a">
+		
+		<div data-role="content">
+			<div id="pic"><h1>Wind Energy Pocket Guide</h1></div>
+			
+				<div id="group">
+				<div data-role="controlgroup">
+				<a href="#turbines" data-role="button" data-icon="arrow-r" data-theme="d">Turbines</a>
+				
+				<a href="#dictionary" data-role="button" data-icon="arrow-r" data-theme="f" data-transition="pop">Glossary</a>
+				<a href="#mwcalc" data-role="button" data-icon="arrow-r" data-theme="g" data-transition="pop">MWcalc</a>
+				<a href="#about" data-role="button" data-icon="arrow-r" data-theme="e" data-transition="pop">About</a>
+				</div>
+				
+				</div>
+		</div>
+		
+	</div>
+	<div data-role="page" id="dictionary" data-theme="f">
+		
+		<div data-role="header" data-position="fixed">
+			<a href="#home" data-role="button" data-transition="pop" data-icon="home">Home</a>
+			<a href="#summaryInfo" data-icon="info"data-transition="pop" data-iconpos="right">Help</a>
+			<h2>Glossary</h2>
+		</div>
+		<div data-role="content">
+			
+			
+			<ul data-role="listview" data-filter="true" data-filter-placeholder="search or scroll" id="words" data-autodividers="true">
+				<div data-role="collapsible">
+				<h3>Accumulator</h3>
+				<p>Device for storage of hydraulic pressure for use in braking systems. It is a tank divided into two parts.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Actuator</h3>
+					<p>Mechanism to control turbines pitch and yaw. Usually powered by hydraulics.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Adjusted availability</h3>
+					<p>Period of time a turbine is available for operation after eliminating time and outages.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Aeroelasticity</h3>
+					<p>The study of the effect of aerodynamic forces on elastic bodies such as wind turbine blades.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Ailerons</h3>
+					<p>Moveable flaps on the outboard trailing edge of a wind turbine blade for limiting power in high winds. Used widely in older machines.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Alternating Current (AC)</h3>
+					<p>An electric current that reverses its polarity cyclically (switches positions in terms of its direction). The frequency is at 50-60hz depending on the countries. AC is caused by a rotating a magnet around the wire (an alternator).</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Alternator</h3>
+					<p>An alternator is an electromechanical device that converts mechanical energy to electrical energy in the form of alternating current. Most alternators use a rotating magnetic field with a stationary armature but occasionally, a rotating armature is used with a stationary magnetic field; or a linear alternator is used.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Amp (ampere)</h3>
+					<p>The ampere is a measure of the amount of electric charge passing a point in an electric circuit per unit time with 6.241 × 1018 electrons, or one coulomb per second constituting one ampere. Unit of electric current equivalent to one volt applied across a resistance of one ohm (unit of electrical resistance).</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Anemometer</h3>
+					<p>An instrument for measuring wind speed.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Asynschronous generator</h3>
+					<p>Generator where alternating current frequency is not proportional to the speed of the generator rotor. An induction or asynchronous motor is an AC motor in which current is induced in the rotor winding by the magnetic field of the stator. Therefore they do not require the sliding electric contacts, such as a commutator or slip rings, which are needed to transfer current to the rotor winding in other types of motor such as the universal motor. Rotor windings consist of short-circuited loops of conductors and are made in two types: the wound rotor and the squirrel-cage rotor.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Axial thrust</h3>
+					<p>Force on a turbine rotor parallel to windstream.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Bearingless rotor</h3>
+					<p>A rotor where variable pitch blades are attached to the hub without bearings.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Betz limit</h3>
+					<p>In 1919 the physicist Albert Betz showed that for a hypothetical ideal wind-energy extraction machine, the fundamental laws of conservation of mass and energy allowed no more than 16/27 (59.3%) of the kinetic energy of the wind to be captured. This Betz' law limit can be approached by modern turbine designs which may reach 70 to 80% of this theoretical limit.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Braking mechanism</h3>
+					<p>Wind turbines are required to have two braking systems for emergency stoppage. The primary braking system for most modern wind turbines is the aerodynamic braking system, which essentially consists in turning the rotor blades about 90 degrees along their longitudinal axis (in the case of a pitch controlled turbine or an active stall controlled turbine), or in turning the rotor blade tips 90 degrees (in the case of a stall controlled turbine). These systems are usually spring operated, in order to work even in case of electrical power failure, and they are automatically activated if the hydraulic system in the turbine loses pressure. The mechanical brake is used as a back up. </p>
+					</div>
+				<div data-role="collapsible">
+					<h3>Capacity factor</h3>
+					<p>The net capacity factor of a power plant is the ratio of its actual output over a period of time, to its potential output if it were possible for it to operate at full nameplate capacity indefinitely. To calculate the capacity factor, take the total amount of energy the plant produced during a period of time and divide by the amount of energy the plant would have produced at full capacity. Capacity factors vary greatly depending on the type of fuel that is used and the design of the plant. The capacity factor should not be confused with the availability factor, capacity credit (firm capacity) or with efficiency.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Carbon Fibre Reinforced Polymers</h3>
+					<p>Carbon-fiber-reinforced polymer, carbon-fiber-reinforced plastic or carbon-fiber reinforced thermoplastic (CFRP, CRP, CFRTP or often simply carbon fiber), is an extremely strong and light fiber-reinforced polymer which contains carbon fibers. The polymer is most often epoxy, but other polymers, such as polyester, vinyl ester or nylon, are sometimes used. The composite may contain other fibers, such as aramid e.g. Kevlar, Twaron, aluminium, or glass fibers, as well as carbon fiber.</p>
+				</div><div data-role="collapsible"><h3>Control system</h3><p>A computerised system to monitor the turbine's performance, including speed and direction of the wind, the levels of electrical power generation, the rotor speed, the blades’ pitch angle, vibration levels and the temperature of the lubricants. </p></div>
+				<div data-role="collapsible">
+					<h3>Cost of Energy (CoE)</h3>
+					<p>The cost of electricity (typically cents/kWh, Euro/kWh, Euro or $/MWh) generated by different sources is a calculation of the cost of generating electricity at the point of connection to a load or electricity grid. It includes the initial capital, discount rate, as well as the costs of continuous operation, fuel, and maintenance.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Curtailment</h3>
+					<p>Stopping access of electricity produced from a source (such as a wind turbine) in order to prevent overload of the grid.</p>
+				</div><div data-role="collapsible">
+					<h3>Cyclic Pitch</h3>
+					<p>The cyclic control is usually located between the pilot's legs and is commonly called the cyclic stick or just cyclic. On most helicopters, the cyclic is similar in appearance to a joystick in a conventional aircraft. The control is called the cyclic because it changes the pitch angle of the rotor blades cyclically. That is, the pitch or feathering angle of the rotor blades changes depending upon their position as they rotate around the hub.</p>
+				</div><div data-role="collapsible">
+					<h3>Darrieus Motor</h3>
+					<p>The Darrieus wind turbine is a type of vertical axis wind turbine (VAWT) used to generate electricity from the energy carried in the wind. The turbine consists of a number of aerofoils mounted on a rotating shaft or framework. This design of wind turbine was patented by Georges Jean Marie Darrieus, a French aeronautical engineer in 1931.</p>
+				</div><div data-role="collapsible">
+					<h3>Rotor diameter</h3>
+					<p>The diameter the blades including the rotor tip. </p>
+				</div><div data-role="collapsible">
+					<h3>Direct Current (DC)</h3>
+					<p>Direct current (DC) is the unidirectional flow of electric charge. Direct current is produced by sources such as batteries, thermocouples, solar cells, and commutator-type electric machines of the dynamo type. Direct current may flow in a conductor such as a wire, but can also flow through semiconductors, insulators, or even through a vacuum as in electron or ion beams. The electric current flows in a constant direction, distinguishing it from alternating current (AC)</p>
+				</div><div data-role="collapsible">
+					<h3>Direct drive generator</h3>
+					<p>A direct drive mechanism is one that takes the power coming from a motor without any reductions. Having fewer moving parts also means having fewer parts prone to failure. Failures in other systems are usually produced by aging of the component (such as a stretched belt), or stress. But  direct-drive mechanisms need a more precise control mechanism. Low voltage variations on a high-speed motor, which is reduced to low rpms can go unnoticed, but in a direct-drive, those variations are directly reflected on the rotational speed.</p>
+				</div><div data-role="collapsible">
+					<h3>Doubly fed induction generator (DFIG)</h3>
+					<p>Doubly fed electric machines are electric motors or electric generators that have windings on both stationary and rotating parts, where both windings transfer significant power between shaft and electrical system. Usually the stator winding is directly connected to the three-phase grid and the three-phase rotor winding is fed from the grid through a rotating or static frequency converter.
+
+Doubly fed machines are typically used in applications that require varying speed of the machine's shaft in a limited range around the synchronous speed, for example ¬± 30%, because the power rating of the frequency converter is reduced similarly. Today doubly fed drives are the most common variable speed wind turbine concept.</p>
+				</div><div data-role="collapsible">
+					<h3>Gear ratio</h3>
+					<p>The ratio of the number of revolution per minute between the main shaft and the output shaft of a wind turbine drive train.</p>
+				</div><div data-role="collapsible">
+					<h3>Generator</h3>
+					<p>A generator uses the mechanical energy supplied to it to force the movement of electric charges present in the wire of its windings through an external electric circuit. electric charges could be induced by moving an electrical conductor, such as a wire that contains electric charges, in a magnetic field. This movement creates a voltage difference between the two ends of the wire or electrical conductor. This causes the electric charges to flow, thus generating electric current.</p>
+				</div><div data-role="collapsible">
+					<h3>General Electric (GE)</h3>
+					<p>GE's wind division first began as developer Zond in 1980 by James Dehlsen (who launched now-defunct Clipper Windpower). Enron acquired Zond and the German manufacturer Tacke in 1997. In 2002 GE acquired the wind power assets of Enron during its bankruptcy proceedings while gas turbine sales slumped. Enron Wind was the only surviving US manufacturer of large wind turbines at the time, and GE increased engineering and supplies for the Wind Division and doubled the annual sales to $1.2B in 2003.</p>
+				</div><div data-role="collapsible">
+					<h3>Gigawatt</h3>
+					<p>1000 megawatts. Also see GW/h, the amount of energy produced over an hour. Usually, appears in the context of energy produced over a year. 1000GW = 1TW (Terawatt)</p>
+				</div>
+					<div data-role="collapsible">
+					<h3>Grid parity</h3>
+					<p>Grid parity (or socket parity) when an alternative energy source can generate electricity at a levelised cost (LCoE) that is less than or equal to the price of purchasing power from the electricity grid. The term is most commonly used when discussing renewable energy sources, notably solar power and wind power.</p>
+				</div>
+					<div data-role="collapsible">
+					<h3>HAWT</h3>
+					<p>Horizontal axis wind turbine</p>
+				</div><div data-role="collapsible"><h3>The hub</h3><p>The hub is one of a wind turbine’s heaviest components, weighing 8 to 10 tons for a 2-MW turbine. The hub is designed to be rigid yet able to absorb a high level of vibration.</p></div><div data-role="collapsible">
+					<h3>IEC wind classes</h3>
+					<p>Wind speed classes. Roughly speaking I = high wind, II = medium and III = low. M/s = meters per second and the % = turbulence (sudden changes in wind speed).</p> <div style="font-size: 12px;">
+<ul>
+<li>IA 10 m/s 18%</li>
+<li>IB 10 m/s 16%</li>
+<li>IIA 8.5 m/s 18%</li>
+<li>IIB 8.5 m/s 16%</li>
+<li>IIIA 7.5 m/s 18%</li>
+<li>IIIB 7.5 m/s 16%</li>
+<li>IVA 6 m/s  18%</li>
+<li>IVB 6 m/s 16%</li></ul>
+
+</div>
+		</div>		
+				<div data-role="collapsible">
+				<h3>In Phase</h3>
+				<p>The output of the wind turbine genrator needs  to coincide exactly with the frequency of the grid. If the currents are not in phase, there will be a huge power surge which will result in huge sparks, and ultimately damage to the circuit breaker (the switch), and/or the generator.</p>
+				
+				
+				</div><div data-role="collapsible">
+					<h3>Inverter</h3>
+					<p>A device to convert DC to AC. the converted AC can be at any required voltage and frequency with the use of appropriate transformers, switching, and control circuits.</p>
+				</div>
+				<div data-role="collapsible"><h3>Jacket foundation</h3><p>A steel frame, similar to that used on an electricity pylon used for offshore wind turbines in the 5-10MW range.</p></div>
+				<div data-role="collapsible">
+					<h3>Kilowatt</h3>
+					<p>1000 watts</p>
+				</div><div data-role="collapsible">
+					<h3>Lidar</h3>
+					<p>Lidar - remote sensor technology for measuring distance using light reflected from a laser. In wind energy terms it is used to measure wind speeds. A floating version operates offshore. </p>
+				</div><div data-role="collapsible">
+					<h3>Load</h3>
+					<p>Demand for electrical power.</p>
+				</div><div data-role="collapsible">
+					<h3>LVRT</h3>
+					<p> low voltage ride through (LVRT), or fault ride through (FRT), is what an electric device, especially wind generator, may be required to be capable of when the voltage in the grid is temporarily reduced due to a fault or load change in the grid. The voltage may be reduced in one, two or all the three phases of the AC grid. The severity of the voltage dip is defined by the voltage level during the dip (may go down to zero) and the duration of the dip. If a wind turbine trips during such a voltage dip and becomes disconnected, then it will further weaken the overall stability of the grid, potentially causing more turbines to trip in a self-amplifying ripple effect. This effect is more severe in Doubly-fed Induction generators (DFIG).</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Main bearings</h3>
+					<p>In horizontal axis turbines the bearings support the main shaft hub and rotor.</p>
+				</div><div data-role="collapsible">
+					<h3>Megawatt hour MW/h</h3>
+					<p>The MW-hour is a unit of energy equivalent to one megawatt (1 MW) of power expended for one hour (1 h) of time. Also used for GW/h (1000MW per hour) and TW/h (1,000,000 per hour).</p>
+				</div><div data-role="collapsible">
+					<h3>Metres per second m/s</h3>
+					<p>Unit of wind speed. One m/s is equal to 2.24 mph. See IEC wind classes.</p>
+				</div><div data-role="collapsible">
+					<h3>Nacelle</h3>
+					<p>Construction at top of turbine housing the drivetrain and generator.</p>
+				</div><div data-role="collapsible">
+					<h3>Monopile foundation</h3>
+					<p>The foundation consists of a steel pile (pipe) with a diameter of between 3.5 and 4.5 metres. The pile is driven some 10 to 20 metres into the seabed depending on the type of underground. The mono pile foundation is effectively extending the turbine tower under water and into the seabed.</p>
+				</div><div data-role="collapsible">
+					<h3>Natural Frequency</h3>
+					<p>The frequency at which a system vibrates absent of any external force.</p>
+				</div><div data-role="collapsible">
+					<h3>Off peak</h3>
+					<p>Refers to points of load distribution curve or to the time of the day when electricity demand is at a minimum.</p>
+				</div><div data-role="collapsible"><h3>Ohm</h3><p>Unit of electrical resistance.</p></div><div data-role="collapsible">
+					<h3>Parallel generation</h3>
+					<p>Production of electricity in conjunction with that delivered by a utility network or grid.</p>
+				</div><div data-role="collapsible">
+					<h3>Partial span pitch control</h3>
+					<p>In contrast to full span pitch control, where the whole blade is turned, only the outboard sections are used.</p>
+				</div><div data-role="collapsible">
+					<h3>Passive jaw</h3>
+					<p>A control system that uses the aerodynamic forces of the wind to orient the nacelle and rotor in proper alignment.</p>
+				</div><div data-role="collapsible">
+					<h3>Peak load</h3>
+					<p>Maximum consumption of energy supply.</p>
+				</div><div data-role="collapsible">
+					<h3>Peak shaving</h3>
+					<p>Method to reduce he need for standby capacity in a utility system by controlling when loads are brought online.</p>
+				</div><div data-role="collapsible">
+					<h3>Penetration level</h3>
+					<p>The relative amount of wind turbine generating capacity in an otherwise conventional supply system. The amount of wind generating capacity divided by the system's total installed capacity.</p>
+				</div><div data-role="collapsible">
+					<h3>Photovoltaic cells</h3>
+					<p>Silicon wavers that convert sunlight directly into electricity.</p>
+				</div><div data-role="collapsible">
+					<h3>Pitch control</h3>
+					<p>A system to vary pitch control to control lift and thus rotor torque and power.</p>
+				</div><div data-role="collapsible">
+					<h3>Platform</h3>
+					<p>An overall turbine design that can be adapted for other models. A key example is Vestas V112 platform, where the design is also available with longer blades and different capacities to allow it to target different wind regimes.</p>
+				</div><div data-role="collapsible">
+					<h3>Power curve</h3>
+					<p>Chart of wind turbine power across a range of speeds derived from measurements taken when the turbine is speeding up or slowing down.</p>
+				</div><div data-role="collapsible">
+					<h3>Power law</h3>
+					<p>Model for the increase in wind speed with increasing height above ground.</p>
+				</div><div data-role="collapsible">
+					<h3>Pumped Storage</h3>
+					<p>Where excess wind turbine electricity is used to pump electricity uphill or into rock where is is then released through a hydroelectric turbine to generate electricity.</p>
+				</div><div data-role="collapsible">
+					<h3>Rare earth magnets</h3>
+					<p>Permanent magnets made from elements with atomic numbers from 57 to 71. Neodymium is a popular choice and has a greater magnetic density  .</p>
+				</div><div data-role="collapsible">
+					<h3>Rated Capacity</h3>
+					<p>The output of a wind turbine operating at the constant speed with the output corresponding to rated wind speed. Rated wind speed is the speed at which the turbine produces its rated power.</p>
+				</div><div data-role="collapsible"><h3>Reduction gearbox</h3>
+					<p>Gear reduction involves using gears/sprockets/pulleys of two different sizes to work together. Using the right sprockets can reduce or increase the output.</p>
+				</div><div data-role="collapsible">
+					<h3>Rotational inertia</h3>
+					<p>Moment of inertia is a property of rotating bodies that defines its resistance to a change in angular velocity about an axis of rotation. It is how rotation of a body is affected by Newton's law of inertia, which states "Every body perseveres in its state of being at rest or of moving uniformly straight forward except insofar as it is compelled to change its state by forces impressed." [1] In this context, inertia refers to resistance to change.Moment of inertia applies to an extended body in which the mass is constrained to rotate around an axis. It arises as a combination of mass and geometry in the study of the movement of continuous bodies, or assemblies of particles, known as rigid body dynamics.</p>
+				</div><div data-role="collapsible">
+					<h3>Rotor torque</h3>
+					<p>Movement produced by the rotor, a function of lift and the distance from the hub where the lift is produced.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Servo motor</h3>
+					<p>A servo motor is a rotary actuator that allows for precise control of angular position. It consists of a motor coupled to a sensor for position feedback, through a reduction gearbox. It also requires a relatively sophisticated controller, often a dedicated module designed specifically for use with servomotors.</p>
+				</div><div data-role="collapsible">
+					<h3>Spar</h3>
+					<p>Blade spar. Structural element running along the blade.</p>
+				</div><div data-role="collapsible">
+					<h3>Squirrel cage rotor</h3>
+					<p>A squirrel-cage rotor is the rotating part (rotor) used in the most common form of AC induction motor. It consists of a cylinder of steel with alumminium or copper conductors embedded in its surface. An electric motor with a squirrel-cage rotor is termed a squirrel-cage motor. The relative motion between this field and the rotation of the rotor induces electric current in the conductive bars. In turn these currents lengthwise in the conductors react with the magnetic field of the motor to produce force acting at a tangent orthogonal to the rotor, resulting in torque to turn the shaft. In effect the rotor is carried around with the magnetic field but at a slightly slower rate of rotation.</p>
+				</div><div data-role="collapsible">
+					<h3>Stator</h3>
+					<p>Part of generator that is stationary. The stator may be either a permanent magnet or an electromagnet. Where the stator is an electromagnet, the coil which energises it is known as the field coil or field winding.</p>
+				</div><div data-role="collapsible">
+					<h3>Swept area</h3>
+					<p>The area of the wind stream swept by the turbine's rotor.</p>
+				</div><div data-role="collapsible">
+					<h3>Synchronous generator</h3>
+					<p>Permanent magnet generator where alternating current frequency is proportional to the speed of the generator's rotor. Most wind turbines use asynchronous generators for simplistic reasons.</p>
+				</div><div data-role="collapsible">
+					<h3>Tariff</h3>
+					<p>Or Feed in tariff. Schedule of prices for the supply of electricity.</p>
+				</div><div data-role="collapsible">
+					<h3>Transmission</h3>
+					<p>Device for transmitting the power of the rotor to that of the load - converting the low speed of the shaft to the high speed required by the generator.</p>
+				</div><div data-role="collapsible"><h3>Tripile foundation</h3><p>A foundation design consisting of a steel pile that sits above the water level on a three-legged structure that has to be pinned to the seabed. Tripiles can be used in water depths between 25m and 50m.</p></div><div data-role="collapsible"><h3>Watt</h3><p>Measures the rate of energy conversion or transfer. In terms of electromagnetism, one watt is the rate at which work is done when one ampere (A) of current flows through an electrical potential difference of one volt. A typical household incandescent light bulb has a power rating of 25 to 100 watts</p></div>
+				<div data-role="collapsible"><h3>Volt</h3><p>A measurement of potential electrical energy.</p></div>
+				<div data-role="collapsible">
+					<h3>Yaw control</h3>
+					<p>Mechanism for moving the rotor in or out of the wind.</p>
+				</div>
+			</ul>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+					
+					<li><a href="#turbines" data-role="button" data-transition="pop">Turbines</a></li>
+					<li><a href="#mwcalc" data-role="button" data-transition="pop">MWCalc</a></li>
+					</ul>
+				</div>
+			
+			</div>	
+			
+		</div>
+		</div>
+	<div data-role="page" id="about" data-theme="e">
+		<div data-role="header">
+			<a href="#home" data-icon="back" data-transition="pop"></a>
+			<h1>About</h1>
+		</div>
+		<div data-role="content">
+		<p>
+		This app aims to be a basic reference tool for these three tasks:
+		</p>
+		<ol>
+			<li>Estimating the output of any given wind farm in any given wind location.</li>
+			<li>Providing a glossary of terms used in the sector.</li>
+			<li>Listing out the bulk of the 1MW+ turbines on the market.</li>
+		</ol>
+		<p>It is intended to be a reference guide for people in the industry and those looking for a basic understanding of wind power</p>
+		<p>Any comments feel free to get in touch via <a href="http://twitter.com/windpowerjamesq">@windpowerjamesq</a></p>
+		<p>Copyright</p>
+		
+		</div>
+	
+	</div>	
+	
+	<div data-role="page" id="turbineinfo" data-theme="d" >
+		<div data-role="header">
+			<a href="#turbines" data-icon="back" data-transition="pop"></a>
+			<h1>About</h1>
+		</div>
+		<div data-role="content">
+		<p>The turbine finder shows a large number of the most common industrial-scale wind turbines in use today.</p>
+			<p>To search, you may use the following criteria:</p><ol>
+				<li>Make of turbine</li>
+				<li>Capacity (in kW)</li>
+				<li>Rotor size</li>
+				<li>Wind class, either in IEC terms of in high, medium, low.</li>
+				<li>Onshore or offshore.</li>
+			</ol>
+		</div>
+	
+	</div>	
+	
+	
+	
+
+	
+	<div data-role="page" id="turbines" data-theme="d">
+		<div data-role="header" data-position="fixed">
+			<a href="#home" data-icon="home" data-transition="pop">Home</a>
+			<a href="#turbineinfo" data-icon="info" data-iconpos="right" data-transition="pop" >Help</a>
+			<h1>Turbine finder</h1>
+		</div>
+		<div data-role="content">
+			<h3>Enter turbine search term:</h3>
+			<div id="search_area">
+			<input type="search" name="search" id="search"/>
+			
+			
+		</div>
+		<div id="update" data-role="listview">
+		</div>
+		
+		</div>
+		
+		
+		
+
+	
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+				
+				<li><a href="#dictionary" data-role="button" data-transition="pop">Glossary</a></li>
+				<li><a href="#mwcalc" data-role="button" data-transition="pop">MWCalc</a></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<div data-role="page" id="mwcalcInfo" data-theme="g">
+		<div data-role="header"><a href="#mwcalc" data-icon="back" data-transition="pop"></a><h1>MWCalc Info</h1></div>
+		<div data-role="content">
+			<p>The aim of the MWCalc is to give an approx reading of the MW/h that can be produced by a wind farm in low/medium and high wind conditions.</p> 
+			<ol>
+			<li>Pick to convert MW/h to MW or MW to MW/hs.</li>
+			<li>Enter the figure to be converted. If you are converting to MW, enter in MW/hs (add three zeros if you only have the GW/h figure and add in six if you have the TW/hs).</li>
+			<li>Hit submit.</li>
+			</ol>
+			<p>The answer is given in GW/h for no better reason as this is probably the best reflection of output for individual projects</p>
+			<p>The wind speeds are based on standard research into wind turbine capacity factors.</p>
+			<ul>
+				<li>6 m/s = 15%</li>
+				<li>7 m/s = 28%</li>
+				<li>8 m/s = 40% </li>
+				<li>9 m/s = 50%</li>
+				<li>10 m/s = 70%</li>
+			</ul>
+			<p>For more information see IEC wind classes and Capacity Factor in the Glossary.</p>
+		</div>
+	
+	</div>
+	<div data-role="page" id="summaryInfo" data-theme="g">
+		<div data-role="header"><a href="#dictionary" data-icon="back" data-transition="pop"></a><h1>Glossary info</h1></div>
+		<div data-role="content">
+			<p>This is a short glossary of common wind energy terms covering turbine components, electricity production and transmission, and the wind itself.</p> 
+			<p>To use the glossary either scroll down or search the relevant terms in the box.</p>
+		</div>
+	
+	</div>
+	<div data-role="page" id="turbineInfo" data-theme="g">
+		<div data-role="header"><a href="#turbines" data-icon="back" data-transition="pop"></a><h1>Turbine Info</h1></div>
+		<div data-role="content">
+			<p></p>
+		</div>
+	
+	</div>
+	<div data-role="page" id="mwcalc" data-theme="a">
+		<div data-role="header" data-position="fixed" >
+			<a href="#home" data-icon="home" data-transition="pop">Home</a>
+			<a href="#mwcalcInfo" data-icon="info" data-iconpos="right" data-transition="pop">Help</a>
+			<h1>MWcalc</h1>
+		</div>
+		<div data-role="content"> 
+			<div data-role="field-contain">
+				<label for="input">Enter power (MW or MW/h):</label>
+				<input type="text" name="input" id="input" /><br />
+			</div>
+            <div data-role="field-contain">	
+				<label>Pick wind class/ speed m/s: </label><div id="conv"><p></p></div>
+				<input type="range" id="windClass" value="8" min="6" max="10" data-highlight="true" />
+			</div>
+				<br />
+			<div data-role="field-contain">
+				<label for="hoursMw">Convert to:</label>
+				<br />
+				<select name="hoursMW" id="hoursMW" data-role="slider" >
+				<option value="mwh">MW/h</option>
+				<option value="mw">MW</option> 
+				</select>
+				<br /><br />
+			</div>
+			<div data-role="button" id="submit">Submit</div>
+			<br />
+			<div data-role="popup" id="result"><h3></h3> </div>
+			</div>
+			
+			
+			<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+				<li><a href="#turbines" data-role="button" data-transition="pop">Turbines</a></li>
+				<li><a href="#dictionary" data-role="button" data-transition="pop">Glossary</a></li>
+	
+				</ul>
+			</div>
+		</div>
+		
+			
+		</div>
+		
+			
+		
+	
+	
+					
+		
+	
+	
+	
+</body>
+</html>
